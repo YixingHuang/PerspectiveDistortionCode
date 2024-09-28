@@ -1,5 +1,5 @@
 # PerspectiveDeformationCode
- Code and data for Learning Perspective Deformation Correction in Cone-Beam X-Ray Transmission Imaging
+ Code and data for **Learning Perspective Deformation Correction in Cone-Beam X-Ray Transmission Imaging**
 
 
  # Additional information for Experimental Setup
