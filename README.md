@@ -26,13 +26,13 @@ For real CBCT systems, the principal point of each view is not located perfectly
 
 To train deep learning models, 50 multi-slice CT volumes from the SIACS medical image repository [\cite{kistler2013virtual}](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3841349/) are used. Each volume contains a single knee. The volumes are resampled to a volume size of $300\times 600 \times 600$ with an isotropic voxel spacing of 0.5 mm. Synthetic metal implants like K-wires, screws, and plates with holes are drawn by AutoCAD [\cite{fan2022metal}](https://ieeexplore.ieee.org/document/10230412). These implants are randomly selected and placed in the CT volumes as ground truth volumes. These volumes are forward projected to generate projections by CONRAD [\cite{maier2013conrad}](https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4824926) with an ideal circular trajectory with $D_{\text{sd}}=1160$ mm and $D_{\text{si}}=$ 621 mm using the same detector configuration as the real mobile C-arm system. In total, 1400 images are used for training, 150 images are used for validation and 620 images from the real cadaver data are used for test.
 
-![Figure 11](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Figure11.png)
-
-![Figure 12](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Figure12.png)
-
 ## Network Training Parameters
 For training Pix2pixGAN, the Adam optimizer is used with an initial learning rate of 0.0002 and a momentum term of 0.5. The weights $\lambda_1$ and $\lambda_2$ are set to 100 and 50 for the $\ell_1$ loss and the perceptual loss, respectively. Validation is performed during training to avoid over-fitting. In total, 150 epochs are used for training. 
 
 For TransU-Net, the pretrained model of ViT-B/16 is used. For further training, the momentum optimizer is used, with an initial learning rate of 0.01, a momentum term of 0.9 and a weight decay rate of 0.0001. The perceptual loss weight $\lambda_3$ is set to 0.5. Note that setting $\lambda_3$ to a large value of 1.0 causes TransU-Net to predict the beads only without the cylinder background in our experiments. In total, 150 epochs are used for training.
 
 For learning in the Cartesian space, zero padding is used for convolutional operations to keep the same image size. In contrast, for learning in the polar space, periodic padding is used to reduce stitching artifacts at the $0^\circ$ ($360^\circ$) radial direction.
+
+![Figure 11](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Figure11.png)
+
+![Figure 12](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Figure12.png)
