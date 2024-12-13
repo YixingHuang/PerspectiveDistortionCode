@@ -5,7 +5,7 @@
 
 ![Demonstration](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Demonstration.png)
 
-In the [demonstration](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Demonstration.png) example, the RGB view stack (a) utilize color to intuitively indicate the structures with perspective deformation. The DRR reference (b) has reconstruction artifacts (truncation artifacts and metal artifacts) and resolution loss (partial volume effect). The Pix2pixGAN prediction reduces perspective deofrmation, preserves image resolution, and does not have reconstruction artifacts.
+In the [demonstration](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Demonstration.png) example, the RGB view stack (a) utilizes colors to intuitively indicate the structures with perspective deformation. The DRR reference (b) suffers from reconstruction artifacts (truncation artifacts and metal artifacts) and resolution loss (partial volume effect). The Pix2pixGAN prediction reduces perspective deofrmation, preserves image resolution, and does not have reconstruction artifacts.
 
  # Additional information for Experimental Setup
 
