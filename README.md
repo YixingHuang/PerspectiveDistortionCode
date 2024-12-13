@@ -3,7 +3,9 @@
 
 # Demonstration Example
 
-![$0^\circ\&180^\circ$ RGB view](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/RGB_View.png | width=100)
+![$0^\circ\&180^\circ$ RGB view](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/RGB_View.png)
+<img src="https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/RGB_View.png" alt="$0^\circ\&180^\circ$ RGB view" width="300">
+
 ![DRR reference](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/DRR_reference.png)
 ![Pix2pixGAN prediction](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Pix2pixGAN_prediction.png)
 
