@@ -3,21 +3,7 @@
 
 # Demonstration Example
 
-<div style="display: flex; justify-content: space-around; align-items: center;">
-  <figure style="text-align: center; margin: 10px;">
-    <img src="https://raw.githubusercontent.com/YixingHuang/PerspectiveDeformationCode/main/RGB_View.png" alt="$0^\circ\&180^\circ$ RGB view" width="250">
-    <figcaption>$0^\circ\&180^\circ$ RGB view</figcaption>
-  </figure>
-  <figure style="text-align: center; margin: 10px;">
-    <img src="https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/DRR_reference.png" alt="DRR reference" width="250">
-    <figcaption>DRR reference</figcaption>
-  </figure>
-  <figure style="text-align: center; margin: 10px;">
-    <img src="https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Pix2pixGAN_prediction.png" alt="Pix2pixGAN prediction" width="250">
-    <figcaption>Pix2pixGAN prediction</figcaption>
-  </figure>
-</div>
-
+![Demonstration](https://github.com/YixingHuang/PerspectiveDeformationCode/blob/main/Demonstration2.png)
 
 
  # Additional information for Experimental Setup
